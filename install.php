@@ -1,5 +1,6 @@
 <?php
-error_reporting(0);
+ini_set('display_errors', 1);
+error_reporting(E_ALL | E_STRICT);
 // Check if directory templates_c exists and is writable
 if (!file_exists('./templates_c') and !mkdir('./templates_c')){
 	die("Required folder templates_c does not exist and cannot be created. <br>Please create the folder and make it writable in order to proceed.");
@@ -78,7 +79,7 @@ if (!$action) {
         die("Collabtive seems to be already installed.<br />If this is an error, please clear your database.");
     }
 
-    $db_host = $_POST['db_host'];
+/*    $db_host = $_POST['db_host'];
     $db_name = $_POST['db_name'];
     $db_user = $_POST['db_user'];
     $db_pass = $_POST['db_pass'];
@@ -95,7 +96,7 @@ if (!$action) {
     $put = fwrite($file, "$str");
     if ($put) {
         @chmod(CL_ROOT . "/config/" . CL_CONFIG . "/config.php", 0755);
-    }
+    }*/
 
 	//this will be checked in install_mysql to make sure it can only be run from the installer
     $installer_include = "yes";
