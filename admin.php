@@ -115,7 +115,8 @@ elseif ($action == "adduser") {
 
     global $conn;
     $limit = $conn->query("SELECT user FROM limitations where 1")->fetch();
-    if (count($user->getAllUsers()) >= $limit['user']) {
+    $users = $user->getAllUsers();
+    if (!empty($users) && count($user->getAllUsers()) >= $limit['user']) {
         $errtxt = 'حداکثر تعداد مجاز '.$limit['user'].' می باشد. در صورت تمایل برای افزایش تعداد کاربران با شرکت پشتیبان تماس بگیرید ';
         $noperm = $langfile["accessdenied"];
         $template->assign("errortext", "$errtxt<br>$noperm");
@@ -547,7 +548,8 @@ elseif ($action == "addcust") {
     }
 
     $limit = $conn->query("SELECT customer FROM limitations where 1")->fetch();
-    if (count($user->getAllUsers()) >= $limit['customer']) {
+    $allcust = $companyObj->getAllCompanies();
+    if (!empty($allcust) && count($allcust) >= $limit['customer']) {
         $errtxt = 'حداکثر تعداد مجاز '.$limit['customer'].' می باشد. در صورت تمایل برای افزایش تعداد مشتریان با شرکت پشتیبان تماس بگیرید ';
         $noperm = $langfile["accessdenied"];
         $template->assign("errortext", "$errtxt<br>$noperm");
