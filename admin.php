@@ -1,5 +1,6 @@
 <?php
-
+ini_set('display_errors', 1);
+error_reporting(E_ALL | E_STRICT);
 require("./init.php");
 $action = getArrayVal($_GET, "action");
 $mode = getArrayVal($_GET, "mode");
@@ -111,6 +112,16 @@ elseif($action == "adminUsers")
 }
 //add new user
 elseif ($action == "adduser") {
+
+    global $conn;
+    $limit = $conn->query("SELECT user FROM limitations where 1")->fetch();
+    if (count($user->getAllUsers()) >= $limit['user']) {
+        $errtxt = 'حداکثر تعداد مجاز '.$limit['user'].' می باشد. در صورت تمایل برای افزایش تعداد کاربران با شرکت پشتیبان تماس بگیرید ';
+        $noperm = $langfile["accessdenied"];
+        $template->assign("errortext", "$errtxt<br>$noperm");
+        $template->display("error.tpl");
+        return;
+    }
     // Get the system locale and set it as the default locale for the new user
     $sysloc = $settings["locale"];
     // Add the user
@@ -414,11 +425,19 @@ elseif($action == "adminProjects")
 }
 //add new project
 elseif ($action == "addpro") {
+
     if (!$userpermissions["projects"]["add"]) {
         $errtxt = $langfile["nopermission"];
         $noperm = $langfile["accessdenied"];
         $template->assign("errortext", "$errtxt<br>$noperm");
         $template->display("error.tpl");
+        die();
+    }
+
+    $limit = $conn->query("SELECT project FROM limitations where 1")->fetch();
+    if (!empty($project->getProjects()) && count($project->getProjects()) >= $limit['project']) {
+        $errtxt = 'حداکثر تعداد مجاز '.$limit['project'].' می باشد. در صورت تمایل برای افزایش تعداد پروژه ها با شرکت پشتیبان تماس بگیرید ';
+        echo $errtxt;
         die();
     }
 
@@ -521,6 +540,15 @@ elseif($action == "adminCustomers")
 elseif ($action == "addcust") {
     if (!$userpermissions["admin"]["add"]) {
         $errtxt = $langfile["nopermission"];
+        $noperm = $langfile["accessdenied"];
+        $template->assign("errortext", "$errtxt<br>$noperm");
+        $template->display("error.tpl");
+        die();
+    }
+
+    $limit = $conn->query("SELECT customer FROM limitations where 1")->fetch();
+    if (count($user->getAllUsers()) >= $limit['customer']) {
+        $errtxt = 'حداکثر تعداد مجاز '.$limit['customer'].' می باشد. در صورت تمایل برای افزایش تعداد مشتریان با شرکت پشتیبان تماس بگیرید ';
         $noperm = $langfile["accessdenied"];
         $template->assign("errortext", "$errtxt<br>$noperm");
         $template->display("error.tpl");

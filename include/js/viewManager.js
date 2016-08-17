@@ -251,6 +251,8 @@ function submitForm(event) {
                 }
                 catch (e) {
                 }
+            } else {
+                alert(response);
             }
         });
         ajax.requestType = "POST";
