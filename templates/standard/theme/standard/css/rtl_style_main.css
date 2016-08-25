@@ -1,0 +1,801 @@
+#content-left {
+    margin: 0 0 10px 18px ;
+    float: right ;
+}
+#content-right {
+    float: right;
+}
+#content-left h1 {
+    overflow: hidden;
+    padding-right: 5px;
+    text-align: right;
+    width: 700px;
+}
+ul.tabs {
+    float: right;
+    position: relative;
+}
+.block table {
+    border-collapse: collapse;
+    direction: rtl;
+    text-align: right;
+    width: 100%;
+}
+.toggle-in a, .toggle-in.acc-toggle-active a {
+    left: auto;
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+td.message ul {
+    padding: 0 5 0 0px;
+    margin: 0 10 0 0px;
+}
+
+/* Text align */
+.text-align-right{
+    text-align:left;
+}
+/* Float */
+.float-left{
+    float:right;
+}
+.float-right{
+    float:left;
+}
+
+/* Padding and Margin */
+.margin-left-two-px{
+    margin-right:2px;
+    margin-left: auto;
+
+}
+/* ## Basic-XHTML-Elements ############### END ############## */
+
+/* Pagination */
+.pagination
+{
+    margin-right: 10px;
+    margin-left: auto;
+
+}
+.pagination button
+{
+    margin:0 1px 0 1px;
+}
+
+/* ## LOGIN-Elements ################################ */
+
+.login {
+    left: auto;
+    right: 50%;
+    margin-left: auto;
+    margin-right: -230px;
+}
+
+.login-in, .login-alert {
+    padding: 20px 0 20px 0;
+    /*
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    */
+}
+
+/* ## LOGIN-Elements ############## END ############# */
+
+
+
+#header .left {
+    float: right;
+    margin-right: auto;
+    //margin-left: 18px;
+}
+
+#header .right {
+    float: right;
+    padding-left: auto;
+    padding-right: 18px;
+}
+
+#header .logo {
+    float: right;
+}
+
+#header .logo img {
+    float: right;
+}
+
+#header .logo h1 span.title {
+    left: auto;
+    right: -5px;
+    float:right;
+}
+
+
+/* ## MAIN-MENUE ######################################## */
+
+
+#mainmenue li {
+    float: right;
+    margin-right: auto;
+    margin-left: 6px;
+}
+
+#mainmenue li a {
+    float: right;
+}
+
+
+
+#mainmenue .submen {
+    left: auto;
+    right: -6px;
+    float:right;
+}
+
+#mainmenue .submen ul {
+    padding: 0 6px 6px 0;
+    float: right;
+}
+
+#mainmenue .submen li {
+    margin: -6px 0 0 6px;
+}
+
+
+#mainmenue li a:hover span {
+    left: auto;
+    right: -222px;
+    text-align: left;
+}
+
+#mainmenue li .submen a:hover span {
+    top: -16px;
+    left: auto;
+    right: -216px;
+}
+
+#mainmenue li:hover a .submenarrow {
+    left: auto;
+    right: 0;
+}
+
+/* ## CONTENT ######################################## */
+
+
+#content-left {
+    margin: 0 0 10px 18px;
+    float: right;
+}
+
+
+#content-left h1 {
+    padding: 0 2px 15px 0;
+}
+
+
+#content-left h1.second {
+    right: -8px;
+    left: auto;
+}
+
+#content-left h1 img {
+    float: right;
+}
+
+#content-right {
+    float: right;
+}
+
+.content-right-in {
+    margin: 23px 18px 0 0;
+}
+
+#content-right h2 a.win-up:hover, #content-right h2 a.win-down:hover {
+    background-position: left -15px;
+}
+
+/* ## CHAT ############################################# */
+
+.chat {
+    float: right;
+}
+
+.chat .row .text {
+    float: right;
+    margin-left: 3px;
+}
+
+.chat .chattext {
+    float: right;
+}
+
+
+/* ## SEARCH MODAL ################################### */
+
+.search-modal {
+    padding: 12px 18px 23px 0px;
+    float: right;
+}
+
+/* ## WINTOOLS ######################################## */
+
+.wintools {
+    float: left;
+    margin: 0 0 -30px 37px;
+}
+
+
+
+.wintools a.close:hover {
+    background-position: 0 -31px;
+}
+
+.wintools a.edit {
+    background-position: -23px 0;
+}
+
+.wintools a.edit:hover {
+    background-position: -23px -31px;
+}
+
+.wintools a.del {
+    background-position: -46px 0;
+}
+
+.wintools a.del:hover {
+    background-position: -46px -31px;
+}
+
+.wintools a.filter {
+    background-position: -69px 0;
+}
+
+.wintools a.filter:hover, .wintools a.filter-active {
+    background-position: -69px -31px;
+}
+
+
+.wintools a.add, .wintools a.add-active {
+    background-position: left 0;
+    margin-right: 9px;
+}
+
+.wintools a.add:hover, .wintools a.add-active {
+    background-position: left -31px;
+}
+
+/* ## EXPORT-MAIN ##################################### */
+
+.export-main, .add-main {
+    float: left;
+    left: auto;
+    right: 0;
+    margin: 0 0 -26px 9px;
+    background-position: left 0;
+}
+
+.wintools .export-main {
+    float: right;
+}
+
+.export-main a:hover span, .export-main .export-in a:hover span, .wintools a:hover span, .add-main a:hover span {
+    right: auto;
+    left: 0;
+}
+
+
+
+.export-main .export-in a:hover span {
+    right: auto;
+    left: -30px;
+}
+
+.export-main:hover, .add-main:hover {
+    background-position: left -31px;
+}
+
+.export-in {
+    right: auto;
+    left: 30px;
+    float: right;
+}
+
+
+.export-main a, .wintools a, .add-main a {
+    float: right;
+    margin-left: auto;
+    margin-right: 4px;
+}
+
+.toolwrapper {
+    float: right;
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+
+
+/* ## IN-MENUES ######################################## */
+
+.inwrapper {
+    float: right;
+}
+
+.inwrapper li {
+    float: right;
+    margin: 0 0 6px 1px;
+}
+
+.inwrapper img {
+    float: right;
+}
+
+
+.inmenue a {
+    margin: 0 8px 3px 0;
+}
+
+.moreinfo {
+    left: auto;
+    right: 0;
+}
+
+.moreinfo img {
+    float: right;
+}
+
+
+
+
+/* ## CALENDAR ############## Sidebar / Datepicker ################# */
+
+
+
+
+.calinmenue ul {
+    position: relative;
+    left: auto;
+    right: 0;
+}
+
+.closewin a:hover {
+    background-position: left -19px;
+}
+
+.calinmenue ul li.closewin a {
+    padding: 0 4px 0 0;
+}
+
+/* ## DATEPICKER ######################################## */
+
+
+.datepick .picker {
+    left: auto;
+    right: 152px;
+}
+
+
+/* ## ONLINELISTE ######################################## */
+
+#onlinelist ul {
+    float: right;
+}
+
+#onlinelist li a div img {
+    float: left;
+}
+
+#onlinelist a.user, #onlinelist a.chat, .chat-user {
+    float: right;
+    padding-left: auto;
+    padding-right: 1px;
+}
+
+
+#onlinelist a.chat:hover {
+    background-position: left -46px;
+}
+
+.chat-user {
+    background-position: left 0;
+}
+
+#onlinelist li a:hover div {
+    right: -119px;
+}
+
+/* ## HEADLINES ##################################### */
+
+.headline h2 {
+    right: 0;
+    left: auto;
+}
+
+.headline_lone h2 {
+    height: 32px;
+    line-height: 33px;
+    margin: -15px 2px 10px 0;
+}
+
+.headline img, .headline_lone img {
+    float:right;
+    margin: 0 2px 0 7px;
+}
+
+.headline_lone h2 img {
+    margin: 0 -4px 0 0px;
+}
+
+
+/* ## BUTTON ####################################### */
+
+a.butn_link, a.butn_link_active {
+    float: right;
+    margin: 0 0 0 1px;
+}
+
+/* ## AVATARE / MESSAGES ########################### */
+
+.avatar, .avatar-profile {
+    float: right;
+}
+
+
+.user .avatar-profile img,.msgs .avatar img, .avatar img {
+    float: right;
+}
+
+.message {
+    float: right;
+}
+
+
+.message-in ul
+{
+padding-left: inherit;
+
+}
+.message-in ul, .descript ul {
+list-style-type: disc;
+padding-left: auto;
+padding-right: 40px;
+}
+
+.message img {
+    float: right;
+    margin: 0 0 6px 6px;
+}
+
+
+.message .toggle-content {
+    padding: 12px 6px 12px 0;
+}
+
+/* ## Blind Toggles ################################### */
+
+/* ## Breadcrumbs #################################### */
+
+.breadcrumb {
+    left: auto;
+    right: -3px;
+}
+
+.breadcrumb span {
+    float: right;
+
+}
+
+.breadcrumb a {
+    float: right;
+}
+
+.breadcrumb img {
+    float: right;
+}
+
+
+/* ## TAB-MENUES ################################### */
+ul.tabs {
+    float: right;
+}
+
+ul.tabs li {
+    float: right;
+    margin: 0 0 0 1px;
+}
+
+
+ul.tabs li a:hover span {
+    right: auto;
+    left: -258px;
+}
+
+
+
+
+
+
+/* ## MODALs ######################################## */
+
+#modal_container {
+
+    text-align: right;
+}
+
+#modal_container.tasksmodal, #modal_container.milesmodal {
+
+    padding: 6px 12px 12px 12px;
+    margin: -50px -126px 0 0;
+}
+
+#modal_container.pics {
+    background: none;
+    margin: -50px -126px 0 0;
+}
+.acc_modal .icon img {
+    float: right;
+}
+
+.acc_modal .content_in {
+    padding: 6px 31px 6px 6px;
+?>;
+}
+
+
+.modaltitle img {
+    float: right;
+}
+
+.modaltitle a.winclose {
+    float: left;
+    right: auto;
+    left: 0;
+}
+
+
+/* ## STATUS ############ Statusbar Project ############# */
+
+
+.statuswrapper ul {
+    float: right;
+}
+
+.statuswrapper li {
+    margin: 0 0 0 2px;
+    float: right;
+}
+
+.statuswrapper a {
+    padding: 0 6px 0 6px;
+    float: right;
+}
+
+.statuswrapper a.desc, .statuswrapper a.desc_active {
+    padding: 0 6px 0 12px;
+    margin: 0 0 0 6px;
+}
+
+.statuswrapper a.desc:hover {
+    background-position: left -16px;
+}
+
+.statuswrapper a.desc_active {
+    background-position: left -41px;
+}
+
+.statuswrapper a.desc_active:hover {
+    background-position: left -66px;
+}
+
+.status {
+
+    left: 0;
+    right: auto;
+    float: left;
+}
+
+.statusbar_b {
+    float:right;
+    margin: 9px 0 0 12px;
+}
+
+/* ## CONTENT ########### without table ################ */
+
+.contenttitle_menue {
+    float: right;
+    padding: 12px 6px 0 7px;
+}
+
+
+.contenttitle_in {
+    float: right;
+}
+
+
+.content_in_wrapper {
+    float: right;
+}
+
+.staterowin {
+    margin: 0 48px 0 0;
+
+
+}
+.staterowin_right {
+    margin: -22px 650px 0 0;
+    float:right;
+
+
+
+}
+
+/* ## FILES ################ Specials ################## */
+
+
+/* ## DESCRIPTION ############# Specials ############### */
+
+/* ## TABLES ######################################## */
+
+.block table {
+    text-align: right;
+}
+
+
+.block table td {
+    padding: 0 6px 0 0;
+}
+
+.block table.log td {
+    padding: 6px 6px 6px 0;
+}
+
+.block table tbody.paging td {
+    padding: 0 6px 0 0;
+}
+
+
+.block table td.symbols img {
+    float: right;
+}
+
+
+.block table thead th {
+    padding: 0 6px 0 0;
+?>;
+}
+
+
+.block table td.tools, .block table th.tools, .message .block table td.right {
+    padding: 0 9px 0 0;
+}
+
+.message .block table td.right {
+    padding: 0 6px 0 0;
+}
+
+
+.tablemenue-in {
+    padding: 0 38px 0 0;
+}
+
+
+.block_in_wrapper {
+    padding: 10px 44px 10px 0;
+}
+
+
+
+/* ## TABLES - COLS ########### ges. 706px ############# */
+
+/* TASKS COLORS #####################################*/
+
+
+.userwrapper {
+    float: right;
+}
+
+
+
+/* TIMETRACKING COLORS #################################*/
+
+
+/* MILESTONES COLORS #################################*/
+
+
+/* ## ACCORDION ################ Toggle ############### */
+
+
+
+
+span.acc-toggle:hover, .second-thead:hover span.acc-toggle {
+    background-position: left -15px;
+}
+
+span.acc-toggle-active, .second-thead span.acc-toggle-active {
+    background-position: left -40px;
+}
+
+span.acc-toggle-active:hover, .second-thead:hover span.acc-toggle-active  {
+    background-position: left -65px;
+}
+
+
+.toggle-in a, .toggle-in.acc-toggle-active a {
+    left: auto;
+    right: 0;
+}
+
+
+
+/* ## ACCORDION ################ Tools ############### */
+
+a.tool_edit, a.tool_del {
+    float: right;
+    margin-right: auto;
+    margin-left: 4px;
+}
+a.tool_edit_active
+{
+    float: right;
+    margin-right: auto;
+    margin-left: 4px;
+
+}
+
+
+/* ## ACCORDION ############### Marker ############## */
+
+
+
+
+h1 span {
+    margin-left:auto;
+    margin-right:6px;
+}
+
+/* ## Infos ## start ## */
+
+.infowin_left {
+
+    right: auto;
+    left: 0;
+    float: left;
+}
+.infowin_left img {
+    float:right;
+}
+.info_in_red, .info_in_green, .info_in_yellow {
+    padding: 10px 4px 8px 10px;
+    float: left;
+}
+
+span.acc-toggle, span.acc-toggle-active, .second-thead span.acc-toggle, .second-thead span.acc-toggle-active {
+    background: rgba(0, 0, 0, 0) url("../images/acc-open.png") no-repeat scroll left 10px;
+}
+td.text-align-right {
+    direction: ltr;
+    float: right;
+}
+#content-right h2 {
+    text-align: right;
+}
+#content-right h2 a.win-up, #content-right h2 a.win-down {
+    background: rgba(0, 0, 0, 0) url("../images/win-up-side.png") no-repeat scroll left 1px;
+}
+.content-right-in {
+    margin: 23px 0 0 18px;
+}
+.block_in_wrapper {
+    direction: rtl;
+}
+

@@ -49,8 +49,12 @@
         <link rel="stylesheet" href="templates/{$settings.template}/theme/{$settings.theme}/css/lytebox.css" type="text/css"/>
         <script type="text/javascript" src="include/js/lytebox.js"></script>
     {/if}
-    <link rel="stylesheet" type="text/css" href="templates/{$settings.template}/theme/{$settings.theme}/css/style_main.php"/>
 
+    <link rel="stylesheet" type="text/css" href="templates/{$settings.template}/theme/{$settings.theme}/css/style_main.php"/>
+    {if $settings.locale == "fa"}
+        <link rel="stylesheet" type="text/css" href="templates/{$settings.template}/theme/{$settings.theme}/css/rtl_style_main.css"/>
+        <link rel="stylesheet" type="text/css" href="templates/{$settings.template}/theme/{$settings.theme}/css/rtl_style_form.css"/>
+    {/if}
 
     {if $jsload1 == "tinymce"}
     {literal}

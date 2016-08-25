@@ -1,0 +1,129 @@
+form.main label {
+    float: right;
+    text-align: right;
+}
+form.main input {
+    float: right;
+}
+form.main .row .editor {
+    float: right;
+}
+
+
+
+form.main label {
+    float:right;
+}
+
+
+
+form.main input {
+    float: right;
+}
+
+/* in Userprofile */
+
+
+/* ## LOGIN - Form ################################ */
+
+.login form {
+    text-align: right;
+}
+
+
+.login form label {
+    float: right;
+    margin-left: 1px;
+    margin-right: auto;
+}
+
+
+.login form input, .login form label.keep span, .login form label.keep-active span {
+    float: right;
+}
+
+.login form label.keep span, .login form label.keep-active span {
+    margin: 0 35px 0 0;
+}
+
+
+
+/* ## SEARCH - Form (Sidebar)) ############################### */
+
+
+#search .row .text, #choices ul {
+    float: right;
+    margin-left: 1px;
+    margin-right: auto;
+}
+
+#search button {
+    float: right;
+}
+
+
+#choices ul { /* Autocompleter */
+    float:right;
+}
+#choices li {
+    float:right;
+}
+
+#choices li img {
+    float:right;
+}
+
+#indicator1 {
+    left: auto;
+    right: 150px;
+}
+
+
+/* ## BUTTON ############################### */
+
+button, button.inner, button.inner-active {
+    float: right;
+    margin: 0 0 0 5px;
+}
+
+form.main select {
+    float: right;
+}
+
+
+/* ## FILES ############################### */
+
+.fileinput {
+    float: right;
+}
+
+.faux {
+    right: 0px;
+    left: auto;
+}
+
+.fileinput button {
+    float: left;
+}
+
+
+form.main .checkbox{
+    float:right;
+    margin: 1px 0 0 25px;
+}
+
+form.main .radio{
+    float:right;
+}
+
+
+
+
+/* ## Editor ## start */
+
+form.main .row .editor {
+    float: right;
+}
+
+/* ## Editor ## end */
+
